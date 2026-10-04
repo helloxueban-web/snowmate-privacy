@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SnowMate 隐私政策</title>
+<meta name="description" content="雪伴（SnowMate）隐私政策 · SnowMate Privacy Policy">
+<style>
+:root { --bg:#f6f8fb; --card:#fff; --fg:#14213a; --fg2:#55627a; --line:#dde3ec; --brand:#387dcb; color-scheme:light; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0e1522; --card:#151e2e; --fg:#e7edf6; --fg2:#9aa8bd; --line:#26324a; --brand:#7fb2ec; color-scheme:dark; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", sans-serif; }
+main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+header { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+.logo { width:44px; height:44px; border-radius:11px; background:#387dcb; display:grid; place-items:center; color:#fff; font-weight:800; font-size:22px; flex-shrink:0; }
+h1 { font-size:26px; line-height:1.3; margin:0; text-wrap:balance; }
+.lang { margin:4px 0 0; font-size:14px; }
+h2 { font-size:19px; margin:36px 0 10px; padding-top:8px; }
+p, ul { margin:10px 0; }
+ul { padding-left:22px; }
+li { margin:4px 0; }
+.meta { color:var(--fg2); font-size:14px; margin:12px 0 20px; }
+a { color:var(--brand); word-break:break-all; }
+code { font-size:14px; background:var(--line); padding:1px 5px; border-radius:4px; }
+hr { border:0; border-top:1px solid var(--line); margin:40px 0 8px; }
+.tbl { overflow-x:auto; margin:12px 0; border:1px solid var(--line); border-radius:10px; background:var(--card); }
+table { border-collapse:collapse; width:100%; font-size:14.5px; min-width:520px; }
+th, td { text-align:left; vertical-align:top; padding:9px 12px; border-bottom:1px solid var(--line); }
+th { color:var(--fg2); font-weight:600; font-size:13px; letter-spacing:.02em; }
+tr:last-child td { border-bottom:0; }
+footer { margin-top:48px; color:var(--fg2); font-size:13px; }
+</style>
+</head>
+<body>
+<main>
+<header><div class="logo" aria-hidden="true">雪</div><h1>雪伴（SnowMate）隐私政策</h1></header>
+<p class="lang"><a href="#en">English summary ↓</a></p>
+<p class="meta">适用于雪伴 2.0 测试版 · 生效日期：2026 年 10 月 5 日</p>
+<p>雪伴是一个帮朋友们一起滑雪的工具：记录滑雪轨迹、看雪场地图、和小队互相看到位置、发文字和语音、遇到危险时更快联系救援。这份说明讲清楚雪伴用了你的哪些信息、存在哪里、保存多久。</p>
+<p><strong>一句话版本：</strong> 大部分信息只存在你的手机上。只有当你加入小队时，你的昵称、最新位置和你发的消息才会上传，给同一小队的人看，并在 24 小时后自动删除。雪伴没有广告，不做追踪，不卖数据，也不接入第三方统计。</p>
+<h2>1. 只保存在你手机上的信息</h2>
+<p>以下信息不会上传到任何服务器，删除雪伴即全部删除：</p>
+<ul><li>个人资料：昵称、常住城市、语言</li><li>头像照片（裁成小图，只用作地图上的定位点）</li><li>滑雪档案：单板/双板、水平等</li><li>滑雪记录和轨迹</li><li>紧急联系人的名字和电话</li><li>行程、收藏和各种设置</li></ul>
+<h2>2. 加入小队时上传的信息</h2>
+<p>只有你创建或加入小队后，雪伴才会把下面这些信息发到服务器，并且只有同一小队的成员能看到：</p>
+<div class="tbl"><table><thead><tr><th>信息</th><th>用途</th><th>保存多久</th></tr></thead><tbody><tr><td>一个匿名账号编号</td><td>区分不同的人；不需要手机号、邮箱或密码</td><td>直到你删除雪伴（之后不再使用）</td></tr><tr><td>你在小队里的昵称、小队名称和队码</td><td>让队友知道你是谁</td><td>直到你离开小队；最后一人离开时小队删除</td></tr><tr><td>你的最新位置：经纬度、海拔、速度、时间、是否在记录</td><td>在地图上显示队友位置</td><td>只保留最新一条；超过 24 小时自动删除；离开小队立即删除</td></tr><tr><td>你发的文字消息</td><td>小队聊天</td><td>24 小时后自动删除</td></tr><tr><td>你发的语音片段</td><td>小队语音</td><td>24 小时后自动删除</td></tr></tbody></table></div>
+<p>服务器使用 Supabase，数据存放在澳大利亚悉尼（ap-southeast-2）的数据中心。数据库设置了访问规则：不在小队里的人无法读取小队的位置和消息。</p>
+<h2>3. 手机权限</h2>
+<p>雪伴只在需要时请求权限，你可以随时在 iPhone“设置 → 雪伴”里关闭。</p>
+<ul><li><strong>位置</strong>：开始滑雪记录、在地图上显示你的位置，或打开求助面板时使用。只有在你开启滑雪记录时，锁屏后才继续使用位置；结束记录即停止。</li><li><strong>麦克风</strong>：只在你按住“按住说话”时录音，松开即停止。</li><li><strong>相机 / 照片</strong>：只在你选择头像时使用，照片留在手机上。</li></ul>
+<h2>4. 求助功能</h2>
+<ul><li>拨打 111 或雪场电话时，雪伴只是打开 iPhone 自带的拨号界面，通话由你的运营商完成。</li><li>发短信给紧急联系人时，雪伴打开 iPhone 自带的短信界面，并填好你的位置。短信要你自己点发送，由你的运营商发出。</li><li>发到小队时，求助消息和普通消息一样，24 小时后删除。</li></ul>
+<p>雪伴无法确认救援是否受理，也不提供救援服务。</p>
+<h2>5. 地图</h2>
+<p>地图底图来自 Google 地图（Map Tiles API）或 OpenStreetMap。加载地图时，你的手机会直接向它们请求图片，它们会看到你的网络地址和所查看的地图区域，适用它们各自的隐私政策：</p>
+<ul><li>Google 隐私权政策：<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li><li>OpenStreetMap 隐私政策：<a href="https://osmfoundation.org/wiki/Privacy_Policy">https://osmfoundation.org/wiki/Privacy_Policy</a></li></ul>
+<p>雪道和缆车数据来自 OpenStreetMap，内置在雪伴里，查看时不联网。</p>
+<h2>6. 我们不做的事</h2>
+<ul><li>不投放广告，不使用广告标识符（IDFA），不跨 App 追踪你</li><li>不接入第三方统计或分析工具</li><li>不出售或出租任何数据</li><li>不读取你的通讯录（紧急联系人由你自己输入）</li><li>不读取健康数据</li></ul>
+<h2>7. 删除你的数据</h2>
+<ul><li><strong>离开小队</strong>：你的成员身份和位置立即删除。你发过的消息最晚 24 小时后自动删除。</li><li><strong>删除雪伴</strong>：手机上的所有数据随之删除。</li><li>如果想立即删除服务器上与你有关的所有数据，请发邮件到下面的地址，并写明你的小队队码和你在小队里的昵称。</li></ul>
+<h2>8. 儿童</h2>
+<p>雪伴面向成年人和在家长陪同下的青少年，不专门面向 13 岁以下的儿童，也不会有意收集他们的信息。</p>
+<h2>9. 变更和联系</h2>
+<p>这份政策如有变化，会在 App 内和本页面更新，并修改上方的生效日期。</p>
+<p>开发者：Xiaochen Lan（新西兰） 联系邮箱：helloxueban@gmail.com</p>
+<hr>
+<h2 id="en" lang="en">English summary</h2>
+<p>SnowMate (雪伴) is a ski companion app for small groups of friends.</p>
+<ul><li><strong>On your device only:</strong> profile, avatar photo, ski level, ski tracks, emergency contacts, trips and settings. None of this is uploaded.</li><li><strong>Shared with your team only when you join one:</strong> an anonymous account ID, your team nickname, your latest location (only the most recent point), and the text and voice messages you send. Locations and messages are automatically deleted after 24 hours. Leaving a team deletes your membership and location immediately. Data is stored with Supabase in Sydney, Australia, and access rules prevent anyone outside the team from reading it.</li><li><strong>Permissions:</strong> location is used while recording a ski day or showing your position. Background location is used only while recording. The microphone is used only while you hold the talk button. The camera and photos are used only to pick an avatar.</li><li><strong>SOS:</strong> the app opens the iPhone's own Phone and Messages apps. It does not place calls or send messages by itself, and it cannot confirm that rescue services have responded.</li><li><strong>Maps:</strong> map images are loaded from Google Maps (Map Tiles API) or OpenStreetMap, which see your IP address and the area you view.</li><li><strong>No ads, no tracking (no IDFA), no third-party analytics, no data sales.</strong></li><li><strong>Contact and deletion requests:</strong> helloxueban@gmail.com. Include your team code and your nickname in that team.</li></ul>
+<footer>© 2026 Xiaochen Lan · SnowMate / 雪伴</footer>
+</main>
+</body>
+</html>
