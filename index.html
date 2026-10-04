@@ -35,7 +35,7 @@ footer { margin-top:48px; color:var(--fg2); font-size:13px; }
 <main>
 <header><div class="logo" aria-hidden="true">雪</div><h1>雪伴（SnowMate）隐私政策</h1></header>
 <p class="lang"><a href="#en">English summary ↓</a></p>
-<p class="meta">适用于雪伴 2.0 测试版 · 生效日期：2026 年 10 月 5 日 · 更新：2026 年 10 月 5 日（加入小队时队友可以看到你的头像）</p>
+<p class="meta">适用于雪伴 2.0 测试版 · 生效日期：2026 年 10 月 5 日 · 更新：2026 年 10 月 5 日（队友可以看到你的头像；可选的邮箱 / Apple 登录）</p>
 <p>雪伴是一个帮朋友们一起滑雪的工具：记录滑雪轨迹、看雪场地图、和小队互相看到位置、发文字和语音、遇到危险时更快联系救援。这份说明讲清楚雪伴用了你的哪些信息、存在哪里、保存多久。</p>
 <p><strong>一句话版本：</strong> 大部分信息只存在你的手机上。只有当你加入小队时，你的昵称、头像、最新位置和你发的消息才会上传，给同一小队的人看，并在 24 小时后自动删除。雪伴没有广告，不做追踪，不卖数据，也不接入第三方统计。</p>
 <h2>1. 只保存在你手机上的信息</h2>
@@ -43,31 +43,34 @@ footer { margin-top:48px; color:var(--fg2); font-size:13px; }
 <ul><li>个人资料：昵称、常住城市、语言</li><li>滑雪档案：单板/双板、水平等</li><li>滑雪记录和轨迹</li><li>紧急联系人的名字和电话</li><li>行程、收藏和各种设置</li></ul>
 <h2>2. 加入小队时上传的信息</h2>
 <p>只有你创建或加入小队后，雪伴才会把下面这些信息发到服务器，并且只有同一小队的成员能看到：</p>
-<div class="tbl"><table><thead><tr><th>信息</th><th>用途</th><th>保存多久</th></tr></thead><tbody><tr><td>一个匿名账号编号</td><td>区分不同的人；不需要手机号、邮箱或密码</td><td>直到你删除雪伴（之后不再使用）</td></tr><tr><td>你在小队里的昵称、小队名称和队码</td><td>让队友知道你是谁</td><td>直到你离开小队；最后一人离开时小队删除</td></tr><tr><td>你的头像（如果设置了；裁成 160 像素的小图）</td><td>在队友的地图和名单上显示</td><td>直到你离开小队或移除头像</td></tr><tr><td>你的最新位置：经纬度、海拔、速度、时间、是否在记录</td><td>在地图上显示队友位置</td><td>只保留最新一条；超过 24 小时自动删除；离开小队立即删除</td></tr><tr><td>你发的文字消息</td><td>小队聊天</td><td>24 小时后自动删除</td></tr><tr><td>你发的语音片段</td><td>小队语音</td><td>24 小时后自动删除</td></tr></tbody></table></div>
+<div class="tbl"><table><thead><tr><th>信息</th><th>用途</th><th>保存多久</th></tr></thead><tbody><tr><td>一个账号编号</td><td>区分不同的人；不登录时是匿名的，不需要手机号、邮箱或密码</td><td>不登录：直到你删除雪伴；登录：直到你要求删除账号</td></tr><tr><td>你在小队里的昵称、小队名称和队码</td><td>让队友知道你是谁</td><td>直到你离开小队；最后一人离开时小队删除</td></tr><tr><td>你的头像（如果设置了；裁成 160 像素的小图）</td><td>在队友的地图和名单上显示</td><td>直到你离开小队或移除头像</td></tr><tr><td>你的最新位置：经纬度、海拔、速度、时间、是否在记录</td><td>在地图上显示队友位置</td><td>只保留最新一条；超过 24 小时自动删除；离开小队立即删除</td></tr><tr><td>你发的文字消息</td><td>小队聊天</td><td>24 小时后自动删除</td></tr><tr><td>你发的语音片段</td><td>小队语音</td><td>24 小时后自动删除</td></tr></tbody></table></div>
 <p>服务器使用 Supabase，数据存放在澳大利亚悉尼（ap-southeast-2）的数据中心。数据库设置了访问规则：不在小队里的人无法读取小队的位置和消息。</p>
-<h2>3. 手机权限</h2>
+<h2>3. 登录（可选）</h2>
+<p>登录不是必须的。如果你选择登录：</p>
+<ul><li><strong>邮箱登录</strong>：我们保存你的邮箱，只用来发登录验证码。验证码邮件通过 Gmail 发送。</li><li><strong>通过 Apple 登录</strong>：我们保存 Apple 提供的账号标识。如果你选择“隐藏我的邮箱”，我们只会拿到 Apple 的转发地址。</li><li>登录后，你的小队、头像和昵称跟着账号走，换手机或重装后可以恢复。</li><li>我们不会用你的邮箱发营销邮件，也不会给任何第三方。</li></ul>
+<h2>4. 手机权限</h2>
 <p>雪伴只在需要时请求权限，你可以随时在 iPhone“设置 → 雪伴”里关闭。</p>
 <ul><li><strong>位置</strong>：开始滑雪记录、在地图上显示你的位置，或打开求助面板时使用。只有在你开启滑雪记录时，锁屏后才继续使用位置；结束记录即停止。</li><li><strong>麦克风</strong>：只在你按住“按住说话”时录音，松开即停止。</li><li><strong>相机 / 照片</strong>：只在你选择头像时使用。原图留在手机上，只有裁剪后的小图会在你加入小队时给队友看。</li></ul>
-<h2>4. 求助功能</h2>
+<h2>5. 求助功能</h2>
 <ul><li>拨打 111 或雪场电话时，雪伴只是打开 iPhone 自带的拨号界面，通话由你的运营商完成。</li><li>发短信给紧急联系人时，雪伴打开 iPhone 自带的短信界面，并填好你的位置。短信要你自己点发送，由你的运营商发出。</li><li>发到小队时，求助消息和普通消息一样，24 小时后删除。</li></ul>
 <p>雪伴无法确认救援是否受理，也不提供救援服务。</p>
-<h2>5. 地图</h2>
+<h2>6. 地图</h2>
 <p>地图底图来自 Google 地图（Map Tiles API）或 OpenStreetMap。加载地图时，你的手机会直接向它们请求图片，它们会看到你的网络地址和所查看的地图区域，适用它们各自的隐私政策：</p>
 <ul><li>Google 隐私权政策：<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li><li>OpenStreetMap 隐私政策：<a href="https://osmfoundation.org/wiki/Privacy_Policy">https://osmfoundation.org/wiki/Privacy_Policy</a></li></ul>
 <p>雪道和缆车数据来自 OpenStreetMap，内置在雪伴里，查看时不联网。</p>
-<h2>6. 我们不做的事</h2>
+<h2>7. 我们不做的事</h2>
 <ul><li>不投放广告，不使用广告标识符（IDFA），不跨 App 追踪你</li><li>不接入第三方统计或分析工具</li><li>不出售或出租任何数据</li><li>不读取你的通讯录（紧急联系人由你自己输入）</li><li>不读取健康数据</li></ul>
-<h2>7. 删除你的数据</h2>
-<ul><li><strong>离开小队</strong>：你的成员身份、头像和位置立即删除。你发过的消息最晚 24 小时后自动删除。</li><li><strong>删除雪伴</strong>：手机上的所有数据随之删除。</li><li>如果想立即删除服务器上与你有关的所有数据，请发邮件到下面的地址，并写明你的小队队码和你在小队里的昵称。</li></ul>
-<h2>8. 儿童</h2>
+<h2>8. 删除你的数据</h2>
+<ul><li><strong>离开小队</strong>：你的成员身份、头像和位置立即删除。你发过的消息最晚 24 小时后自动删除。</li><li><strong>删除账号</strong>：登录后在“我的 → 账号 → 删除账号”，会退出所有小队并永久删除账号。</li><li><strong>删除雪伴</strong>：手机上的所有数据随之删除。如果你登录过，账号还在服务器上，可以先在 App 里删除账号，或发邮件给我们。</li><li>如果想立即删除服务器上与你有关的所有数据，请发邮件到下面的地址，并写明你的小队队码和你在小队里的昵称。</li></ul>
+<h2>9. 儿童</h2>
 <p>雪伴面向成年人和在家长陪同下的青少年，不专门面向 13 岁以下的儿童，也不会有意收集他们的信息。</p>
-<h2>9. 变更和联系</h2>
+<h2>10. 变更和联系</h2>
 <p>这份政策如有变化，会在 App 内和本页面更新，并修改上方的生效日期。</p>
 <p>开发者：Xiaochen Lan（新西兰） 联系邮箱：helloxueban@gmail.com</p>
 <hr>
 <h2 id="en" lang="en">English summary</h2>
 <p>SnowMate (雪伴) is a ski companion app for small groups of friends.</p>
-<ul><li><strong>On your device only:</strong> profile, ski level, ski tracks, emergency contacts, trips and settings. None of this is uploaded.</li><li><strong>Shared with your team only when you join one:</strong> an anonymous account ID, your team nickname, your avatar (a 160-pixel thumbnail, if you set one), your latest location (only the most recent point), and the text and voice messages you send. Locations and messages are automatically deleted after 24 hours. Leaving a team deletes your membership, avatar and location immediately. Data is stored with Supabase in Sydney, Australia, and access rules prevent anyone outside the team from reading it.</li><li><strong>Permissions:</strong> location is used while recording a ski day or showing your position. Background location is used only while recording. The microphone is used only while you hold the talk button. The camera and photos are used only to pick an avatar. Only the cropped thumbnail is shared, and only with your team.</li><li><strong>SOS:</strong> the app opens the iPhone's own Phone and Messages apps. It does not place calls or send messages by itself, and it cannot confirm that rescue services have responded.</li><li><strong>Maps:</strong> map images are loaded from Google Maps (Map Tiles API) or OpenStreetMap, which see your IP address and the area you view.</li><li><strong>No ads, no tracking (no IDFA), no third-party analytics, no data sales.</strong></li><li><strong>Contact and deletion requests:</strong> helloxueban@gmail.com. Include your team code and your nickname in that team.</li></ul>
+<ul><li><strong>On your device only:</strong> profile, ski level, ski tracks, emergency contacts, trips and settings. None of this is uploaded.</li><li><strong>Shared with your team only when you join one:</strong> an anonymous account ID, your team nickname, your avatar (a 160-pixel thumbnail, if you set one), your latest location (only the most recent point), and the text and voice messages you send. Locations and messages are automatically deleted after 24 hours. Leaving a team deletes your membership, avatar and location immediately. Data is stored with Supabase in Sydney, Australia, and access rules prevent anyone outside the team from reading it.</li><li><strong>Optional sign-in:</strong> with email (we store your email address, used only to send sign-in codes via Gmail) or Sign in with Apple (we store the Apple account identifier; with "Hide My Email" we only get Apple's relay address). Signing in lets your team, avatar and nickname follow you to a new phone. We never send marketing email or share your address. You can delete your account in the app (Me → Account → Delete account).</li><li><strong>Permissions:</strong> location is used while recording a ski day or showing your position. Background location is used only while recording. The microphone is used only while you hold the talk button. The camera and photos are used only to pick an avatar. Only the cropped thumbnail is shared, and only with your team.</li><li><strong>SOS:</strong> the app opens the iPhone's own Phone and Messages apps. It does not place calls or send messages by itself, and it cannot confirm that rescue services have responded.</li><li><strong>Maps:</strong> map images are loaded from Google Maps (Map Tiles API) or OpenStreetMap, which see your IP address and the area you view.</li><li><strong>No ads, no tracking (no IDFA), no third-party analytics, no data sales.</strong></li><li><strong>Contact and deletion requests:</strong> helloxueban@gmail.com. Include your team code and your nickname in that team.</li></ul>
 <footer>© 2026 Xiaochen Lan · SnowMate / 雪伴</footer>
 </main>
 </body>
